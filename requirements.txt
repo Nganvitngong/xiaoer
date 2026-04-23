@@ -1,32 +1,26 @@
-# --- PHẦN QUAN TRỌNG: ĐÃ ĐIỀU CHỈNH ĐỂ ỔN ĐỊNH GIAO DIỆN ---
-streamlit>=1.35.0, <=1.40.0
-streamlit-autorefresh==1.2.1
-streamlit-modal==0.1.2
-streamlit-option-menu==0.4.0
+# Core Framework - Ép phiên bản để tương thích với Pandas và Pillow
+streamlit==1.40.0
 
-# --- AI, RAG & LLM (GIỮ NGUYÊN PHIÊN BẢN GỐC CỦA BẠN) ---
+# Library hỗ trợ giao diện (Sửa lại version đúng tồn tại)
+streamlit-option-menu==0.4.0
+streamlit-autorefresh==1.0.1
+streamlit-modal==0.1.2
+
+# AI & RAG (Giữ nguyên logic của bạn)
 google-generativeai==0.8.6
 google-genai==1.73.1
-google-ai-generativelanguage==0.6.15
 langchain==1.0.5
 langchain-community==0.4.1
-langchain-core==1.0.4
-langchain-text-splitters==1.0.0
 chromadb==1.5.7
 faiss-cpu==1.12.0
 
-# --- CSDL & BACKEND (GIỮ NGUYÊN THEO FILE GỐC) ---
-supabase==2.25.1
-postgrest==2.25.1
-realtime==2.25.1
-storage3==2.25.1
+# Data - Hạ cấp nhẹ để khớp với yêu cầu của Streamlit 1.40
+pandas==2.2.3
+pillow==10.4.0
 
-# --- XỬ LÝ DỮ LIỆU & TIỆN ÍCH ---
-pandas==3.0.2
-numpy==2.4.4
-pillow==11.3.0
-PyPDF2==3.0.1
-python-docx==1.2.0
+# Utilities
 python-dotenv==1.2.1
 requests==2.32.5
-tqdm==4.67.1
+PyPDF2==3.0.1
+python-docx==1.2.0
+supabase==2.25.1
